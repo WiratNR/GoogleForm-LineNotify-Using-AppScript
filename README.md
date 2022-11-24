@@ -2,7 +2,7 @@
 
 # 1.สร้าง GoogleForm 
 # 2.กดปุ่ม 3 จุด เพิ่มเติม > เลือก โปรแกรมแก้ไขสคริปต์
-# 3.Copy code วาง 
+# 3.Copy code.gs วาง 
 # 4.เข้าหน้าเว็บ LineNotify เพื่อออก Token 
 # 5.Copy Token มาวางไว้ที่
  ```javascript
