@@ -90,7 +90,26 @@ const extractResponses = (responses) => {
 };
 
 const sendLineNotify = (token, txt) => {
-  const notify = new lib.lineNotify(token)
-  notify.sendText(txt)
+  //const notify = new lib.lineNotify(token)
+  //notify.sendText(txt)
+
+  //update new
+
+  const url = "https://notify-api.line.me/api/notify";
+  const headers = {
+    "Authorization": "Bearer "+token
+  };
+  
+  const payload = {
+    "message": txt
+  };
+
+  const options = {
+    "method": "post",
+    "headers": headers,
+    "payload": payload
+  };
+
+  UrlFetchApp.fetch(url, options);
 }
 
